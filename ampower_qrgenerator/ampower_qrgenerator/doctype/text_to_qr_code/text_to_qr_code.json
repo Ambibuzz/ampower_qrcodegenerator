@@ -1,0 +1,63 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:qr_code_text",
+ "creation": "2023-01-16 16:50:17.399461",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "qr_code_text",
+  "qr_code_image",
+  "qr_code_base64",
+  "generate_qr_code"
+ ],
+ "fields": [
+  {
+   "fieldname": "qr_code_text",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "QR code text",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "qr_code_image",
+   "fieldtype": "HTML",
+   "label": "QR code image"
+  },
+  {
+   "fieldname": "qr_code_base64",
+   "fieldtype": "Long Text",
+   "label": "QR code base64"
+  },
+  {
+   "fieldname": "generate_qr_code",
+   "fieldtype": "Button",
+   "label": "Generate QR code"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-01-16 16:53:13.741602",
+ "modified_by": "Administrator",
+ "module": "AmPower QRGenerator",
+ "name": "Text to QR code",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}
